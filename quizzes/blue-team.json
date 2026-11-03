@@ -1,0 +1,84 @@
+{
+  "format_version": 1,
+  "title": "CyberWolf Blue Team Check",
+  "level": "beginner",
+  "category": "Defensive Security",
+  "description": "Questions about log analysis, evidence and incident triage.",
+  "questions": [
+    {
+      "id": "blue-log-timestamp",
+      "topic": "Log Analysis",
+      "difficulty": "beginner",
+      "prompt": "Why should an analyst record the time zone when building an incident timeline?",
+      "options": [
+        { "id": "A", "text": "Time zones are always identical across systems" },
+        { "id": "B", "text": "Events may be recorded in different time zones or clock settings" },
+        { "id": "C", "text": "A time zone reveals the user's password" },
+        { "id": "D", "text": "Timestamps cannot be used in investigations" }
+      ],
+      "correct_option": "B",
+      "explanation": "Systems can use different time zones, daylight-saving settings or clocks. Normalization and documentation help avoid incorrect event ordering.",
+      "reference": "https://csrc.nist.gov/pubs/sp/800/61/r2/final"
+    },
+    {
+      "id": "blue-alert-evidence",
+      "topic": "Alert Triage",
+      "difficulty": "beginner",
+      "prompt": "What should a good alert triage note do?",
+      "options": [
+        { "id": "A", "text": "State assumptions as confirmed facts" },
+        { "id": "B", "text": "Record evidence, context, uncertainty and next steps" },
+        { "id": "C", "text": "Delete the original logs" },
+        { "id": "D", "text": "Name an attacker without supporting evidence" }
+      ],
+      "correct_option": "B",
+      "explanation": "Useful triage separates what telemetry shows from hypotheses, notes limitations and recommends proportionate next steps.",
+      "reference": "https://www.cisa.gov/resources-tools/resources/incident-response"
+    },
+    {
+      "id": "blue-false-positive",
+      "topic": "Detection Engineering",
+      "difficulty": "intermediate",
+      "prompt": "What is a false positive in security monitoring?",
+      "options": [
+        { "id": "A", "text": "A true malicious event that was detected" },
+        { "id": "B", "text": "A benign event incorrectly flagged as suspicious" },
+        { "id": "C", "text": "An event with a valid timestamp" },
+        { "id": "D", "text": "A log source that is encrypted" }
+      ],
+      "correct_option": "B",
+      "explanation": "A false positive occurs when benign activity is classified as suspicious. Analysts tune detections while ensuring they do not hide meaningful malicious activity.",
+      "reference": "https://attack.mitre.org/"
+    },
+    {
+      "id": "blue-preserve-evidence",
+      "topic": "Incident Response",
+      "difficulty": "intermediate",
+      "prompt": "Why is evidence preservation important during incident response?",
+      "options": [
+        { "id": "A", "text": "It makes every investigation conclusive" },
+        { "id": "B", "text": "It helps maintain integrity and supports later analysis" },
+        { "id": "C", "text": "It eliminates the need for documentation" },
+        { "id": "D", "text": "It guarantees attribution" }
+      ],
+      "correct_option": "B",
+      "explanation": "Preserving originals, recording hashes and documenting handling supports integrity and repeatable analysis. It does not guarantee that every question can be answered.",
+      "reference": "https://csrc.nist.gov/pubs/sp/800/86/final"
+    },
+    {
+      "id": "blue-containment",
+      "topic": "Incident Response",
+      "difficulty": "beginner",
+      "prompt": "What should guide an incident containment decision?",
+      "options": [
+        { "id": "A", "text": "The first tool recommendation regardless of business impact" },
+        { "id": "B", "text": "Scope, evidence, risk, business impact and the response plan" },
+        { "id": "C", "text": "A desire to delete all logs" },
+        { "id": "D", "text": "An assumption that every alert is critical" }
+      ],
+      "correct_option": "B",
+      "explanation": "Containment should be proportionate, authorized and coordinated with the incident response plan, considering operational impact and evidence needs.",
+      "reference": "https://www.cisa.gov/resources-tools/resources/incident-response"
+    }
+  ]
+}
