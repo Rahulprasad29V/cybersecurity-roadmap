@@ -1,0 +1,129 @@
+{
+  "format_version": 1,
+  "title": "CyberWolf Advanced Security Scenarios",
+  "level": "advanced",
+  "category": "Security Engineering and Risk",
+  "description": "Scenario-based questions assessing risk reasoning, architecture, detection engineering and incident decision-making.",
+  "questions": [
+    {
+      "id": "adv-detection-baseline",
+      "topic": "Detection Engineering",
+      "difficulty": "advanced",
+      "prompt": "A new detection produces many alerts during a pilot. Which first step best supports responsible tuning?",
+      "options": [
+        { "id": "A", "text": "Disable the detection permanently" },
+        { "id": "B", "text": "Review representative alerts, data quality, benign counterexamples and the original hypothesis" },
+        { "id": "C", "text": "Increase severity so analysts pay attention" },
+        { "id": "D", "text": "Suppress every alert from the busiest source" }
+      ],
+      "correct_option": "B",
+      "explanation": "Detection tuning should be evidence-led. Analysts need to validate the hypothesis, inspect event quality and identify benign patterns before adjusting logic.",
+      "reference": "https://attack.mitre.org/"
+    },
+    {
+      "id": "adv-cloud-iam",
+      "topic": "Cloud IAM",
+      "difficulty": "advanced",
+      "prompt": "A workload identity has broad administrative permissions but uses only read access to one storage resource. What is the strongest risk-reduction action?",
+      "options": [
+        { "id": "A", "text": "Rename the identity" },
+        { "id": "B", "text": "Create a narrowly scoped role and verify the workload still functions" },
+        { "id": "C", "text": "Hide the role from the console" },
+        { "id": "D", "text": "Rotate the role name every week" }
+      ],
+      "correct_option": "B",
+      "explanation": "A least-privilege policy restricts the identity to required actions and resources. Functional validation helps avoid breaking the workload.",
+      "reference": "https://csrc.nist.gov/glossary/term/least_privilege"
+    },
+    {
+      "id": "adv-incident-timeline",
+      "topic": "Incident Response",
+      "difficulty": "advanced",
+      "prompt": "Two log sources disagree about event order because one uses local time and the other UTC. What should the investigator do?",
+      "options": [
+        { "id": "A", "text": "Discard the source with the earlier timestamp" },
+        { "id": "B", "text": "Normalize time zones, preserve originals and document clock uncertainty" },
+        { "id": "C", "text": "Assume both systems are synchronized" },
+        { "id": "D", "text": "Change original log timestamps to match" }
+      ],
+      "correct_option": "B",
+      "explanation": "Preserving originals while normalizing for analysis protects evidence integrity and avoids false chronology.",
+      "reference": "https://csrc.nist.gov/pubs/sp/800/86/final"
+    },
+    {
+      "id": "adv-appsec-authorization",
+      "topic": "Application Security",
+      "difficulty": "advanced",
+      "prompt": "A user interface hides an administrative action from ordinary users, but the API does not check the caller's role. What is the primary design flaw?",
+      "options": [
+        { "id": "A", "text": "Missing UI animation" },
+        { "id": "B", "text": "Authorization is enforced only in the client" },
+        { "id": "C", "text": "The API uses JSON" },
+        { "id": "D", "text": "The page has too many controls" }
+      ],
+      "correct_option": "B",
+      "explanation": "The server must authorize every protected action and object. Client-side hiding is not a security boundary.",
+      "reference": "https://owasp.org/Top10/A01_2021-Broken_Access_Control/"
+    },
+    {
+      "id": "adv-supply-chain",
+      "topic": "Software Supply Chain",
+      "difficulty": "advanced",
+      "prompt": "A CI pipeline can publish release artifacts using a broadly privileged shared credential. Which control improvement is most appropriate?",
+      "options": [
+        { "id": "A", "text": "Give the credential to every developer" },
+        { "id": "B", "text": "Use narrowly scoped, short-lived workload identity and protected release approvals" },
+        { "id": "C", "text": "Print the credential into build logs for traceability" },
+        { "id": "D", "text": "Disable all audit logs" }
+      ],
+      "correct_option": "B",
+      "explanation": "Least-privilege identities, short-lived credentials and controlled release approval reduce credential exposure and constrain pipeline authority.",
+      "reference": "https://csrc.nist.gov/pubs/sp/800/218/final"
+    },
+    {
+      "id": "adv-vuln-priority",
+      "topic": "Vulnerability Management",
+      "difficulty": "advanced",
+      "prompt": "Two findings have the same severity score. One affects a critical, externally reachable identity service; the other affects an isolated training VM. What should drive prioritization?",
+      "options": [
+        { "id": "A", "text": "The order in which the scanner found them" },
+        { "id": "B", "text": "Asset criticality, exposure, exploit context, compensating controls and remediation feasibility" },
+        { "id": "C", "text": "The number of characters in the finding title" },
+        { "id": "D", "text": "Always patch the oldest asset first" }
+      ],
+      "correct_option": "B",
+      "explanation": "Severity scores are inputs, not complete business risk decisions. Context and exposure help prioritize limited remediation capacity.",
+      "reference": "https://www.first.org/cvss/"
+    },
+    {
+      "id": "adv-threat-hunt",
+      "topic": "Threat Hunting",
+      "difficulty": "advanced",
+      "prompt": "A hunt finds no matching events, but the relevant endpoint telemetry was not collected for part of the time window. What is the strongest conclusion?",
+      "options": [
+        { "id": "A", "text": "The behavior definitely did not occur" },
+        { "id": "B", "text": "No matching activity was observed in available data; coverage is insufficient for a definitive conclusion" },
+        { "id": "C", "text": "The endpoint is confirmed clean" },
+        { "id": "D", "text": "The data gap proves malicious activity" }
+      ],
+      "correct_option": "B",
+      "explanation": "Absence of evidence is not evidence of absence when telemetry coverage is incomplete. The hunt report must state the gap and its effect on confidence.",
+      "reference": "https://attack.mitre.org/"
+    },
+    {
+      "id": "adv-architecture-risk",
+      "topic": "Security Architecture",
+      "difficulty": "advanced",
+      "prompt": "A proposed control reduces access risk but introduces a single point of failure for a critical service. What should the architecture review do?",
+      "options": [
+        { "id": "A", "text": "Approve it because security always outweighs availability" },
+        { "id": "B", "text": "Document the trade-off, evaluate resilience options and assign residual-risk ownership" },
+        { "id": "C", "text": "Ignore availability requirements" },
+        { "id": "D", "text": "Remove all access controls" }
+      ],
+      "correct_option": "B",
+      "explanation": "Security architecture balances confidentiality, integrity, availability, safety and business objectives. Trade-offs and residual risks need explicit owners and treatment.",
+      "reference": "https://www.nist.gov/cyberframework"
+    }
+  ]
+}
