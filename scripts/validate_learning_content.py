@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate CyberWolf quiz banks, achievements, glossary and required files."""
+"""Validate CyberWolf learning data, curriculum manifest and synthetic datasets."""
 
 from __future__ import annotations
 
@@ -103,11 +103,104 @@ def validate_glossary(errors: list[str]) -> int:
         return 0
 
 
+def validate_curriculum(errors: list[str]) -> int:
+    path = ROOT / "curriculum" / "curriculum.json"
+    schema_path = ROOT / "curriculum" / "curriculum.schema.json"
+    data = load_json(path, errors)
+    schema = load_json(schema_path, errors)
+    if not isinstance(data, dict):
+        return 0
+    if not isinstance(schema, dict) or schema.get("title") != "CyberWolf Competency Curriculum":
+        fail("curriculum/curriculum.schema.json: schema document is missing or unexpected", errors)
+
+    modules = data.get("modules")
+    if data.get("format_version") != 1 or not isinstance(modules, list) or not modules:
+        fail("curriculum/curriculum.json: expected format_version=1 and non-empty modules", errors)
+        return 0
+
+    ids: set[str] = set()
+    for index, module in enumerate(modules, start=1):
+        label = f"curriculum/curriculum.json module {index}"
+        if not isinstance(module, dict):
+            fail(f"{label}: expected an object", errors)
+            continue
+        module_id = module.get("id")
+        if not isinstance(module_id, str) or not module_id or module_id in ids:
+            fail(f"{label}: id must be present and unique", errors)
+        else:
+            ids.add(module_id)
+        if module.get("level") not in {"beginner", "intermediate", "advanced"}:
+            fail(f"{label}: invalid level", errors)
+        if not isinstance(module.get("estimated_hours"), int) or module.get("estimated_hours", 0) < 1:
+            fail(f"{label}: estimated_hours must be a positive integer", errors)
+        content_path = module.get("path")
+        if not isinstance(content_path, str) or not (ROOT / content_path).is_file():
+            fail(f"{label}: module path is missing or does not exist: {content_path}", errors)
+        if not isinstance(module.get("learning_outcomes"), list) or not module.get("learning_outcomes"):
+            fail(f"{label}: learning_outcomes must be a non-empty list", errors)
+    return len(modules)
+
+
+def validate_datasets(errors: list[str]) -> int:
+    manifest_path = ROOT / "datasets" / "manifest.json"
+    manifest = load_json(manifest_path, errors)
+    if not isinstance(manifest, dict):
+        return 0
+    if manifest.get("format_version") != 1 or manifest.get("classification") != "synthetic-training-data":
+        fail("datasets/manifest.json: classification must explicitly identify synthetic training data", errors)
+    records = manifest.get("datasets")
+    if not isinstance(records, list) or not records:
+        fail("datasets/manifest.json: datasets must be a non-empty list", errors)
+        return 0
+
+    count = 0
+    seen: set[str] = set()
+    for record in records:
+        if not isinstance(record, dict):
+            fail("datasets/manifest.json: each dataset entry must be an object", errors)
+            continue
+        relative_path = record.get("path")
+        if not isinstance(relative_path, str) or relative_path in seen:
+            fail(f"datasets/manifest.json: invalid or duplicate dataset path {relative_path!r}", errors)
+            continue
+        seen.add(relative_path)
+        path = ROOT / "datasets" / relative_path
+        if record.get("synthetic") is not True:
+            fail(f"datasets/manifest.json: {relative_path} must be explicitly marked synthetic", errors)
+        if not path.is_file():
+            fail(f"datasets/manifest.json: missing dataset file {relative_path}", errors)
+            continue
+        try:
+            with path.open(encoding="utf-8", newline="") as handle:
+                reader = csv.DictReader(handle)
+                if not reader.fieldnames or len(reader.fieldnames) < 2:
+                    fail(f"datasets/{relative_path}: CSV header is missing or incomplete", errors)
+                rows = list(reader)
+                if not rows:
+                    fail(f"datasets/{relative_path}: dataset has no sample rows", errors)
+        except (OSError, csv.Error) as exc:
+            fail(f"datasets/{relative_path}: unable to parse CSV: {exc}", errors)
+        count += 1
+    return count
+
+
+def validate_student_template(errors: list[str]) -> bool:
+    path = ROOT / "student-progress" / "student-profile.template.json"
+    data = load_json(path, errors)
+    if not isinstance(data, dict) or data.get("format_version") != 1 or not isinstance(data.get("profile"), dict):
+        fail("student-progress/student-profile.template.json: invalid learner profile template", errors)
+        return False
+    return True
+
+
 def main() -> int:
     errors: list[str] = []
     quiz_count = validate_quizzes(errors)
     achievement_count = validate_achievements(errors)
     glossary_count = validate_glossary(errors)
+    module_count = validate_curriculum(errors)
+    dataset_count = validate_datasets(errors)
+    validate_student_template(errors)
 
     if errors:
         print("Learning-content validation failed:")
@@ -116,7 +209,11 @@ def main() -> int:
         return 1
 
     print("Learning-content validation passed.")
-    print(f"Validated {quiz_count} quiz questions, {achievement_count} achievements and {glossary_count} glossary terms.")
+    print(
+        f"Validated {quiz_count} quiz questions, {achievement_count} achievements, "
+        f"{glossary_count} glossary terms, {module_count} curriculum modules, "
+        f"and {dataset_count} synthetic datasets."
+    )
     return 0
 
 
