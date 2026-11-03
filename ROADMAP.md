@@ -25,9 +25,6 @@ flowchart TD
 
 ---
 
-# CyberWolf Cybersecurity Roadmap
-
-A competency-based journey from beginner to advanced. Progress when you can explain and demonstrate the outcomes—not simply when a calendar period ends.
 
 ## Stage 0 — Orientation and safe practice
 **Learn:** What cybersecurity protects; confidentiality, integrity, availability, privacy and safety; authorization, scope, rules of engagement, responsible disclosure; Git and note-taking.
