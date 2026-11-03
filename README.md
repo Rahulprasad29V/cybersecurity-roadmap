@@ -10,7 +10,7 @@
 <p align="center">
   <a href="https://github.com/Rahulprasad29V/cybersecurity-roadmap/stargazers"><img src="https://img.shields.io/github/stars/Rahulprasad29V/cybersecurity-roadmap?style=for-the-badge&logo=github&color=111827" alt="GitHub stars"></a>
   <a href="https://github.com/Rahulprasad29V/cybersecurity-roadmap/network/members"><img src="https://img.shields.io/github/forks/Rahulprasad29V/cybersecurity-roadmap?style=for-the-badge&color=0b6e69" alt="GitHub forks"></a>
-  <a href="https://img.shields.io/github/license/Rahulprasad29V/cybersecurity-roadmap"><img src="https://img.shields.io/github/license/Rahulprasad29V/cybersecurity-roadmap?style=for-the-badge&color=246b8f" alt="License"></a>
+  <a href="https://github.com/Rahulprasad29V/cybersecurity-roadmap/blob/main/LICENSE"><img src="https://img.shields.io/github/license/Rahulprasad29V/cybersecurity-roadmap?style=for-the-badge&color=246b8f" alt="License"></a>
   <a href="https://github.com/Rahulprasad29V/cybersecurity-roadmap/actions/workflows/quality.yml"><img src="https://img.shields.io/github/actions/workflow/status/Rahulprasad29V/cybersecurity-roadmap/quality.yml?branch=main&style=for-the-badge&label=quality%20checks" alt="Quality checks"></a>
   <a href="https://github.com/Rahulprasad29V/cybersecurity-roadmap/commits/main"><img src="https://img.shields.io/github/last-commit/Rahulprasad29V/cybersecurity-roadmap?style=for-the-badge&color=475569" alt="Last commit"></a>
 </p>
