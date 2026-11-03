@@ -1,0 +1,7 @@
+asset_id,asset_name,asset_type,owner_team,criticality,data_classification,environment
+ASSET-001,learner-portal,web-application,product-team,high,internal,production-simulated
+ASSET-002,content-api,api,platform-team,high,internal,production-simulated
+ASSET-003,training-storage,object-storage,platform-team,medium,training-data,production-simulated
+ASSET-004,identity-service,identity-provider,identity-team,critical,restricted,production-simulated
+ASSET-005,analytics-worker,container-workload,data-team,medium,internal,production-simulated
+ASSET-006,dev-sandbox,virtual-machine,engineering,low,public-demo,lab
