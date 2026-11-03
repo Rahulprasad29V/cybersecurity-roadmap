@@ -8,6 +8,7 @@ The quiz bank uses versioned JSON files so questions can be reviewed, reused and
 | Foundations Check | Beginner | Networking, operating systems, security principles | [foundations.json](foundations.json) |
 | Web Security Check | Beginner / Intermediate | HTTP, access control, secure coding | [web-security.json](web-security.json) |
 | Blue Team Check | Beginner / Intermediate | Logs, triage, incident response | [blue-team.json](blue-team.json) |
+| Advanced Scenarios | Advanced | Architecture, detection, cloud, identity and risk decisions | [advanced-scenarios.json](advanced-scenarios.json) |
 
 ## Question format
 Each question has a stable ID, prompt, topic, difficulty, answer options, a correct option ID and an explanation. The correct answer is intentionally present in the source JSON: these are public self-study resources, not a secure exam system.
