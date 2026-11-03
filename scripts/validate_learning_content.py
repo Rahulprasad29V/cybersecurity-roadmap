@@ -134,8 +134,17 @@ def validate_curriculum(errors: list[str]) -> int:
         if not isinstance(module.get("estimated_hours"), int) or module.get("estimated_hours", 0) < 1:
             fail(f"{label}: estimated_hours must be a positive integer", errors)
         content_path = module.get("path")
-        if not isinstance(content_path, str) or not (ROOT / content_path).is_file():
-            fail(f"{label}: module path is missing or does not exist: {content_path}", errors)
+        if not isinstance(content_path, str):
+            fail(f"{label}: module path must be a repository-relative string", errors)
+        else:
+            resolved_path = (ROOT / content_path).resolve()
+            try:
+                resolved_path.relative_to(ROOT)
+                inside_repo = True
+            except ValueError:
+                inside_repo = False
+            if not inside_repo or not resolved_path.is_file():
+                fail(f"{label}: module path is missing or escapes repository: {content_path}", errors)
         if not isinstance(module.get("learning_outcomes"), list) or not module.get("learning_outcomes"):
             fail(f"{label}: learning_outcomes must be a non-empty list", errors)
     return len(modules)
@@ -164,7 +173,15 @@ def validate_datasets(errors: list[str]) -> int:
             fail(f"datasets/manifest.json: invalid or duplicate dataset path {relative_path!r}", errors)
             continue
         seen.add(relative_path)
-        path = ROOT / "datasets" / relative_path
+        path = (ROOT / "datasets" / relative_path).resolve()
+        try:
+            path.relative_to((ROOT / "datasets").resolve())
+            inside_dataset_dir = True
+        except ValueError:
+            inside_dataset_dir = False
+        if not inside_dataset_dir:
+            fail(f"datasets/manifest.json: dataset path escapes datasets directory: {relative_path}", errors)
+            continue
         if record.get("synthetic") is not True:
             fail(f"datasets/manifest.json: {relative_path} must be explicitly marked synthetic", errors)
         if not path.is_file():
