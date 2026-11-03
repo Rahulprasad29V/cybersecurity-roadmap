@@ -10,3 +10,9 @@ Thumbs.db
 *.pcapng
 secrets/
 private-evidence/
+
+# Private learner copies (keep templates tracked)
+student-progress/my-*.json
+student-progress/my-*.csv
+student-progress/private/
+weekly-planner/my-*.md
