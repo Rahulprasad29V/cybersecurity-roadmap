@@ -1,0 +1,89 @@
+{
+  "format_version": 1,
+  "title": "CyberWolf Competency Curriculum",
+  "edition": "1.0",
+  "language": "en",
+  "levels": ["beginner", "intermediate", "advanced"],
+  "modules": [
+    {
+      "id": "security-architecture",
+      "title": "Security Architecture and Threat Modeling",
+      "level": "advanced",
+      "path": "advanced/security-architecture.md",
+      "estimated_hours": 8,
+      "prerequisites": ["networking", "security-fundamentals", "identity-basics"],
+      "learning_outcomes": ["identify-trust-boundaries", "model-abuse-cases", "map-controls-to-risk"],
+      "deliverable": "Architecture threat model and residual-risk register"
+    },
+    {
+      "id": "detection-engineering",
+      "title": "Detection Engineering",
+      "level": "advanced",
+      "path": "advanced/detection-engineering.md",
+      "estimated_hours": 10,
+      "prerequisites": ["logging", "networking", "incident-response-basics"],
+      "learning_outcomes": ["define-detection-hypothesis", "map-telemetry", "test-and-tune-analytic"],
+      "deliverable": "Detection specification, test matrix and triage runbook"
+    },
+    {
+      "id": "devsecops-supply-chain",
+      "title": "DevSecOps and Software Supply Chain Security",
+      "level": "advanced",
+      "path": "advanced/devsecops-supply-chain.md",
+      "estimated_hours": 10,
+      "prerequisites": ["git", "programming", "secure-development-basics"],
+      "learning_outcomes": ["map-delivery-trust", "review-dependency-risk", "design-release-controls"],
+      "deliverable": "Software supply-chain threat model and delivery control plan"
+    },
+    {
+      "id": "cloud-native-security",
+      "title": "Cloud-Native Security",
+      "level": "advanced",
+      "path": "advanced/cloud-native-security.md",
+      "estimated_hours": 10,
+      "prerequisites": ["networking", "iam", "linux", "cloud-fundamentals"],
+      "learning_outcomes": ["review-workload-identity", "evaluate-cloud-boundaries", "prioritize-posture-findings"],
+      "deliverable": "Cloud-native security review"
+    },
+    {
+      "id": "enterprise-identity",
+      "title": "Enterprise Identity Security",
+      "level": "advanced",
+      "path": "advanced/enterprise-identity.md",
+      "estimated_hours": 8,
+      "prerequisites": ["authentication", "authorization", "networking"],
+      "learning_outcomes": ["model-identity-lifecycle", "review-privileged-access", "design-access-certification"],
+      "deliverable": "Identity lifecycle and entitlement assessment"
+    },
+    {
+      "id": "threat-hunting",
+      "title": "Threat Hunting",
+      "level": "advanced",
+      "path": "advanced/threat-hunting.md",
+      "estimated_hours": 8,
+      "prerequisites": ["logs", "networking", "security-fundamentals"],
+      "learning_outcomes": ["form-hunt-hypothesis", "assess-telemetry-coverage", "document-confidence"],
+      "deliverable": "Hypothesis-driven hunt report"
+    },
+    {
+      "id": "vulnerability-management",
+      "title": "Vulnerability Management",
+      "level": "advanced",
+      "path": "advanced/vulnerability-management.md",
+      "estimated_hours": 8,
+      "prerequisites": ["asset-inventory", "risk-fundamentals", "patch-management"],
+      "learning_outcomes": ["prioritize-asset-risk", "manage-exceptions", "verify-remediation"],
+      "deliverable": "Risk-ranked remediation backlog"
+    },
+    {
+      "id": "incident-command",
+      "title": "Incident Command and Resilience",
+      "level": "advanced",
+      "path": "advanced/incident-command.md",
+      "estimated_hours": 8,
+      "prerequisites": ["incident-response-basics", "logging", "business-continuity"],
+      "learning_outcomes": ["establish-incident-roles", "document-decisions", "validate-recovery"],
+      "deliverable": "Incident action plan and after-action report"
+    }
+  ]
+}
