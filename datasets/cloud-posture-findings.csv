@@ -1,0 +1,7 @@
+finding_id,resource_id,category,observation,severity_hint,business_context,owner_team,status
+CLOUD-001,LAB-BUCKET-01,storage,Public-access-block setting is disabled,high,Contains fictional training exports,platform-team,open
+CLOUD-002,LAB-ROLE-07,iam,Role includes unused administrative permissions,high,Used by a non-production workload,identity-team,open
+CLOUD-003,LAB-NET-03,network,Management interface is reachable from a broad lab range,medium,Isolated sandbox only,platform-team,review
+CLOUD-004,LAB-LOG-02,logging,Audit retention setting is shorter than the fictional policy target,medium,Impacts investigation window,security-team,open
+CLOUD-005,LAB-KEY-04,cryptography,Key rotation owner is not assigned,low,No evidence of key exposure,platform-team,open
+CLOUD-006,LAB-IMG-09,container,Image inventory has no recorded digest,medium,Build provenance is unclear,engineering,open
