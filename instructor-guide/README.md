@@ -37,3 +37,9 @@ Use the [assessment rubrics](../assessments/README.md). A facilitator should ass
 
 ## Cohort privacy
 Do not collect student credentials, private notes or sensitive screenshots in public GitHub issues. Use institution-approved private channels for learner records.
+
+
+## Advanced curriculum delivery
+For advanced cohorts, use the [advanced module catalog](../advanced/README.md), the [30-day engineering challenge](../advanced/30-day-challenge.md) and the [capstone briefs](../capstones/README.md). Learners should work with the synthetic [dataset catalog](../datasets/README.md) unless a separately approved lab environment is provided.
+
+Advanced submissions should be reviewed with the [capstone rubric](../assessments/rubrics/capstone.md), [architecture rubric](../assessments/rubrics/architecture-review.md) and [oral-defense rubric](../assessments/rubrics/oral-defense.md).
