@@ -1,5 +1,32 @@
 # CyberWolf Cybersecurity Roadmap
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Rahulprasad29V/cybersecurity-roadmap/main/assets/roadmap-overview.svg" alt="CyberWolf cybersecurity learning path" width="100%">
+</p>
+
+> **A competency-based path from beginner to advanced.** Progress when you can explain and demonstrate the outcomes—not simply when a calendar period ends.
+
+**Quick links:** [100-day challenge](100-days/README.md) · [Topic library](topics/README.md) · [Projects](projects/README.md) · [Labs](labs/README.md) · [Learning resources](resources/README.md)
+
+## How the stages connect
+
+```mermaid
+flowchart TD
+    A["Orientation and safety"] --> B["IT and networking"]
+    B --> C["Operating systems and scripting"]
+    C --> D["Security fundamentals"]
+    D --> E["Defensive security"]
+    D --> F["Authorized assessment"]
+    E --> G["Application and cloud security"]
+    F --> G
+    G --> H["Choose a specialization"]
+    H --> I["Build a portfolio"]
+```
+
+---
+
+# CyberWolf Cybersecurity Roadmap
+
 A competency-based journey from beginner to advanced. Progress when you can explain and demonstrate the outcomes—not simply when a calendar period ends.
 
 ## Stage 0 — Orientation and safe practice
