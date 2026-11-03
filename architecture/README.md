@@ -30,7 +30,7 @@ flowchart TD
 
 | Module | Purpose | Primary artifacts |
 |---|---|---|
-| `roadmap/` and `topics/` | Core curriculum | Stages, study guides, outcomes |
+| `ROADMAP.md` and `topics/` | Core curriculum | Stages, study guides, outcomes |
 | `learning-paths/` | Role-based learning | SOC, AppSec, cloud, DFIR and more |
 | `100-days/` | Guided sequence | Day briefs, index, tracker |
 | `quizzes/` | Knowledge checks | Versioned JSON question banks |
