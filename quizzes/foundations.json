@@ -1,0 +1,84 @@
+{
+  "format_version": 1,
+  "title": "CyberWolf Foundations Check",
+  "level": "beginner",
+  "category": "Foundations",
+  "description": "A short self-assessment covering networking, operating systems and core security concepts.",
+  "questions": [
+    {
+      "id": "net-dns-purpose",
+      "topic": "Networking",
+      "difficulty": "beginner",
+      "prompt": "What is the primary purpose of DNS?",
+      "options": [
+        { "id": "A", "text": "Translate domain names into resource records such as IP addresses" },
+        { "id": "B", "text": "Encrypt every application payload" },
+        { "id": "C", "text": "Assign local filesystem permissions" },
+        { "id": "D", "text": "Replace the default gateway" }
+      ],
+      "correct_option": "A",
+      "explanation": "DNS is a distributed naming system. It commonly resolves hostnames to IP addresses, but it also stores other record types.",
+      "reference": "https://www.rfc-editor.org/rfc/rfc1034"
+    },
+    {
+      "id": "net-tcp-reliability",
+      "topic": "Networking",
+      "difficulty": "beginner",
+      "prompt": "Which characteristic is associated with TCP?",
+      "options": [
+        { "id": "A", "text": "It is always faster than UDP" },
+        { "id": "B", "text": "It provides a reliable, ordered byte stream" },
+        { "id": "C", "text": "It has no connection state" },
+        { "id": "D", "text": "It replaces IP routing" }
+      ],
+      "correct_option": "B",
+      "explanation": "TCP provides ordered, reliable byte-stream delivery using mechanisms such as sequence numbers, acknowledgments and retransmission. It does not guarantee that it is always faster.",
+      "reference": "https://www.rfc-editor.org/rfc/rfc9293"
+    },
+    {
+      "id": "os-least-privilege",
+      "topic": "Security Fundamentals",
+      "difficulty": "beginner",
+      "prompt": "What does the principle of least privilege recommend?",
+      "options": [
+        { "id": "A", "text": "Give every user administrator access" },
+        { "id": "B", "text": "Disable all user accounts" },
+        { "id": "C", "text": "Grant only the access needed for an approved task" },
+        { "id": "D", "text": "Share one account across a team" }
+      ],
+      "correct_option": "C",
+      "explanation": "Least privilege limits access to what is necessary for a role or task, reducing the impact of mistakes and compromised accounts.",
+      "reference": "https://csrc.nist.gov/glossary/term/least_privilege"
+    },
+    {
+      "id": "crypto-hash-purpose",
+      "topic": "Cryptography",
+      "difficulty": "beginner",
+      "prompt": "What is a cryptographic hash primarily designed to produce?",
+      "options": [
+        { "id": "A", "text": "A fixed-length digest from input data" },
+        { "id": "B", "text": "A reversible encrypted copy" },
+        { "id": "C", "text": "A username and password pair" },
+        { "id": "D", "text": "A network route" }
+      ],
+      "correct_option": "A",
+      "explanation": "A cryptographic hash maps input of arbitrary length to a fixed-size digest. It is not encryption and is not designed to be reversed.",
+      "reference": "https://csrc.nist.gov/projects/hash-functions"
+    },
+    {
+      "id": "security-cia-integrity",
+      "topic": "Security Fundamentals",
+      "difficulty": "beginner",
+      "prompt": "Which CIA property is most directly concerned with preventing unauthorized modification of data?",
+      "options": [
+        { "id": "A", "text": "Availability" },
+        { "id": "B", "text": "Integrity" },
+        { "id": "C", "text": "Confidentiality" },
+        { "id": "D", "text": "Non-repudiation" }
+      ],
+      "correct_option": "B",
+      "explanation": "Integrity concerns accuracy and protection against unauthorized alteration or destruction of information.",
+      "reference": "https://csrc.nist.gov/glossary/term/integrity"
+    }
+  ]
+}
