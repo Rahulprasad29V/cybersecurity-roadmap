@@ -1,0 +1,12 @@
+{
+  "format_version": 1,
+  "classification": "synthetic-training-data",
+  "notice": "Every record is fictional. Do not use as real threat intelligence or production telemetry.",
+  "datasets": [
+    { "path": "authentication-events.csv", "purpose": "Authentication timeline and detection exercises", "synthetic": true },
+    { "path": "asset-inventory.csv", "purpose": "Asset criticality and ownership exercises", "synthetic": true },
+    { "path": "cloud-posture-findings.csv", "purpose": "Cloud posture review exercises", "synthetic": true },
+    { "path": "identity-access-matrix.csv", "purpose": "Identity access review exercises", "synthetic": true },
+    { "path": "vulnerability-backlog.csv", "purpose": "Risk prioritization exercises", "synthetic": true }
+  ]
+}
