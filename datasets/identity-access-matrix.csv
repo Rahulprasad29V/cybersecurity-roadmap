@@ -1,0 +1,8 @@
+principal_id,principal_type,role,resource,permission,business_owner,last_review_date,expected_access
+LAB-USER-01,human,learner,course-content,read,learning-team,2026-09-01,yes
+LAB-USER-02,human,trainer,course-content,read-write,learning-team,2026-09-01,yes
+LAB-USER-02,human,trainer,user-directory,admin,identity-team,2025-01-01,no
+LAB-USER-03,human,learner,user-directory,read-all,identity-team,2026-09-01,no
+LAB-SVC-01,service,content-publisher,course-content,write,platform-team,2026-09-01,yes
+LAB-SVC-01,service,content-publisher,payment-records,read,finance-team,2026-09-01,no
+LAB-USER-04,human,admin,identity-config,admin,identity-team,2026-09-01,yes
