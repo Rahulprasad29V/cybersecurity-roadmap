@@ -15,7 +15,7 @@ concurrency:
 
 jobs:
   validate:
-    name: Validate Markdown and roadmap
+    name: Validate learning repository
     runs-on: ubuntu-latest
     timeout-minutes: 5
 
@@ -25,5 +25,8 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: Check internal links and required roadmap files
+      - name: Check internal Markdown links and roadmap files
         run: python3 scripts/check_repo.py
+
+      - name: Validate quiz banks, achievements and glossary
+        run: python3 scripts/validate_learning_content.py
