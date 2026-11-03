@@ -2,6 +2,16 @@
 
 All notable repository updates are recorded here.
 
+## 1.3.0 — Advanced cybersecurity learning ecosystem
+- Added eight advanced engineering modules and a 30-day advanced challenge.
+- Added five integrated capstones and detailed assessment rubrics.
+- Added synthetic authentication, asset, cloud, identity and vulnerability datasets.
+- Added an advanced scenario-based quiz bank.
+- Added versioned curriculum manifest, schema, release process and validation.
+- Added instructor delivery resources and advanced engineering templates.
+- Expanded repository quality checks for curriculum paths and synthetic data manifests.
+- Updated the main README and learning indexes.
+
 ## 1.2.0 — Complete learning ecosystem
 - Added architecture documentation and content standards.
 - Added eight role-based learning paths.
