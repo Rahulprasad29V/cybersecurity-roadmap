@@ -31,3 +31,13 @@ Thank you for helping improve this learning resource. Contributions should be ac
 Fork the repository, create a focused branch, make the change, preview Markdown, validate links where practical, and submit a pull request explaining the change and its validation.
 
 By contributing, you agree that your contribution may be distributed under this repository's license.
+
+
+## Automated repository checks
+Every push to `main` and every pull request runs the repository quality workflow. It checks local Markdown links and confirms that the required roadmap and all 100 daily challenge files are present.
+
+Run the same check locally before submitting a change:
+
+```bash
+python3 scripts/check_repo.py
+```
