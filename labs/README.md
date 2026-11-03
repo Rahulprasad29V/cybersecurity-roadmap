@@ -29,6 +29,10 @@ Availability, pricing, features and rules can change. Confirm details on the off
 Use a supported hypervisor, one general-purpose Linux VM, an optional Windows evaluation/lab VM where licensing permits, an isolated virtual network, an intentionally vulnerable local training app, and snapshots. Do not bridge vulnerable targets onto a network you do not control. Keep lab-only passwords unique and never reuse work or personal credentials.
 
 
+## Advanced practical work
+
+Use the [advanced synthetic datasets](../datasets/README.md) for threat hunting, detection engineering, identity reviews, cloud posture assessments and vulnerability prioritization. The [capstone catalog](../capstones/README.md) provides larger, integrated exercises with measurable acceptance criteria.
+
 ## Guided exercises
 The detailed [lab catalog](catalog.md) links to guided exercises for:
 - [Packet review](exercises/packet-review.md)
