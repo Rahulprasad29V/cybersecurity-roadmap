@@ -23,6 +23,10 @@ Learning paths combine existing topic guides, labs, quizzes and projects into ro
 | [GRC Analyst](grc-analyst.md) | Security fundamentals + communication | Risk, policies, controls and assurance |
 | [Threat Intelligence Analyst](threat-intelligence.md) | Networking + defensive security | Intelligence lifecycle and analytic writing |
 
+## Advanced engineering modules
+
+For deeper practice beyond the role paths, explore [security architecture](../advanced/security-architecture.md), [detection engineering](../advanced/detection-engineering.md), [DevSecOps and supply chain](../advanced/devsecops-supply-chain.md), [cloud-native security](../advanced/cloud-native-security.md), [enterprise identity](../advanced/enterprise-identity.md), [threat hunting](../advanced/threat-hunting.md), [vulnerability management](../advanced/vulnerability-management.md) and [incident command](../advanced/incident-command.md).
+
 ## How to use a path
 - Start with the prerequisites listed in the track.
 - Select one primary path; add a second only after building practical depth.
