@@ -1,0 +1,63 @@
+{
+  "format_version": 1,
+  "title": "CyberWolf Learning Achievements",
+  "note": "Manual self-tracking criteria. These are not accredited credentials or verified certificates.",
+  "achievements": [
+    {
+      "id": "first-steps",
+      "name": "First Steps",
+      "description": "Complete the orientation and safety stage.",
+      "criteria": ["Learning journal started", "Authorization and scope rules documented"],
+      "evidence": "A private or sanitized learning-plan note"
+    },
+    {
+      "id": "network-navigator",
+      "name": "Network Navigator",
+      "description": "Demonstrate networking fundamentals.",
+      "criteria": ["Explain DNS and TCP/IP", "Interpret a benign packet capture"],
+      "evidence": "Sanitized packet-review report"
+    },
+    {
+      "id": "linux-explorer",
+      "name": "Linux Explorer",
+      "description": "Demonstrate basic Linux administration.",
+      "criteria": ["Explain permissions and processes", "Review sample system logs"],
+      "evidence": "Lab notes from a disposable Linux VM"
+    },
+    {
+      "id": "defender-mindset",
+      "name": "Defender Mindset",
+      "description": "Complete a defensive investigation exercise.",
+      "criteria": ["Analyze synthetic events", "Separate facts from hypotheses", "Suggest proportionate next steps"],
+      "evidence": "Sanitized alert triage report"
+    },
+    {
+      "id": "web-safety",
+      "name": "Web Safety",
+      "description": "Explain and remediate a web application weakness in a training environment.",
+      "criteria": ["Use an authorized local lab", "Explain root cause", "Document a defensive fix"],
+      "evidence": "Lab finding and regression-test note"
+    },
+    {
+      "id": "lab-documenter",
+      "name": "Lab Documenter",
+      "description": "Publish a complete, safe lab report.",
+      "criteria": ["Scope recorded", "Evidence sanitized", "Limitations stated", "Cleanup completed"],
+      "evidence": "Completed lab report template"
+    },
+    {
+      "id": "portfolio-builder",
+      "name": "Portfolio Builder",
+      "description": "Complete two documented learning projects.",
+      "criteria": ["Two project READMEs", "Reproducible steps", "Test evidence and limitations"],
+      "evidence": "Public sanitized project links"
+    },
+    {
+      "id": "hundred-day-finisher",
+      "name": "100-Day Finisher",
+      "description": "Complete the 100-day challenge with honest reflections.",
+      "criteria": ["All 100 activities recorded", "Portfolio or capstone evidence saved", "Next learning plan written"],
+      "evidence": "Completed local progress tracker and final reflection"
+    }
+  ]
+}
