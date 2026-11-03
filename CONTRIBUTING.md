@@ -41,3 +41,20 @@ Run the same check locally before submitting a change:
 ```bash
 python3 scripts/check_repo.py
 ```
+
+
+## Structured learning content
+- Store quizzes as JSON and follow [quiz.schema.json](quizzes/quiz.schema.json).
+- Keep question IDs unique and stable; include a clear explanation and authoritative reference where useful.
+- Add lab briefs using [lab-exercise-template.md](labs/lab-exercise-template.md).
+- Keep CTF challenges self-contained, offline and safe; include the intended reasoning and learning takeaway.
+- Achievements are manual learning milestones, not credentials or independently verified assessments.
+- Keep personal progress in a local copy. Do not commit learner-identifying information.
+
+## Automated checks
+Pull requests run repository checks for local Markdown links, required 100-day challenge files, quiz structure, achievement identifiers and glossary data. Run locally:
+
+```bash
+python3 scripts/check_repo.py
+python3 scripts/validate_learning_content.py
+```
