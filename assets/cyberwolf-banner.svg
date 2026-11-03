@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">CyberWolf Cybersecurity Roadmap</title>
+  <desc id="desc">Dark navy technology banner with an abstract geometric wolf mark, cyan security accents, and the Learn Secure Build tagline.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07111f"/>
+      <stop offset=".55" stop-color="#0b1d32"/>
+      <stop offset="1" stop-color="#102c3d"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#35f2d0"/>
+      <stop offset="1" stop-color="#39a8ff"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="75%" cy="42%" r="55%">
+      <stop offset="0" stop-color="#16d9c5" stop-opacity=".20"/>
+      <stop offset="1" stop-color="#16d9c5" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#8db6c8" stroke-opacity=".08" stroke-width="1"/>
+    </pattern>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="360" rx="24" fill="url(#bg)"/>
+  <rect width="1200" height="360" rx="24" fill="url(#grid)"/>
+  <rect width="1200" height="360" rx="24" fill="url(#glow)"/>
+  <circle cx="942" cy="180" r="124" fill="#18dbc1" opacity=".11" filter="url(#shadow)"/>
+  <g fill="none" stroke="url(#accent)" stroke-width="2" opacity=".42">
+    <path d="M0 284H120L156 248H280"/>
+    <path d="M920 34H1030L1060 64H1200"/>
+    <path d="M1000 326H1080L1110 296H1200"/>
+    <path d="M0 82H72L96 106H170"/>
+  </g>
+  <g fill="#35f2d0" opacity=".65">
+    <circle cx="120" cy="284" r="4"/><circle cx="280" cy="248" r="4"/>
+    <circle cx="1030" cy="34" r="4"/><circle cx="1000" cy="326" r="4"/>
+  </g>
+  <g transform="translate(820 62)">
+    <path d="M116 4 28 60 48 136 116 218 184 136 204 60Z" fill="#0b2030" stroke="url(#accent)" stroke-width="3"/>
+    <path d="M116 35 66 75 80 133 116 173 152 133 166 75Z" fill="none" stroke="#35f2d0" stroke-opacity=".38" stroke-width="2"/>
+    <path d="M28 60 82 87 116 70 150 87 204 60 181 18 150 51 116 34 82 51 51 18Z" fill="url(#accent)" opacity=".92"/>
+    <path d="M82 87 104 112 94 126 70 117Z" fill="#07111f"/>
+    <path d="M150 87 128 112 138 126 162 117Z" fill="#07111f"/>
+    <path d="M116 105 100 139 116 154 132 139Z" fill="#d7fff9"/>
+    <path d="M84 166 116 190 148 166" fill="none" stroke="#35f2d0" stroke-width="3" stroke-linecap="round"/>
+    <path d="M116 190V218" stroke="#35f2d0" stroke-width="3"/>
+  </g>
+  <g font-family="Inter,Segoe UI,Arial,sans-serif">
+    <text x="78" y="108" fill="#35f2d0" font-size="16" font-weight="700" letter-spacing="5">CYBERWOLF / OPEN LEARNING</text>
+    <text x="74" y="174" fill="#f3f8fb" font-size="54" font-weight="800" letter-spacing="-1.8">Cybersecurity</text>
+    <text x="74" y="231" fill="#f3f8fb" font-size="54" font-weight="800" letter-spacing="-1.8">Roadmap</text>
+    <text x="78" y="280" fill="#a8c2d0" font-size="19" font-weight="500">From zero to security professional</text>
+    <text x="78" y="318" fill="#35f2d0" font-size="13" font-weight="700" letter-spacing="4">LEARN  ·  SECURE  ·  BUILD</text>
+  </g>
+</svg>
