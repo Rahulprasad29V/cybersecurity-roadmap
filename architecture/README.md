@@ -43,6 +43,12 @@ flowchart TD
 | `achievements/` | Motivation | Criteria-based, manually tracked badges |
 | `weekly-planner/` | Study rhythm | Weekly plan and retrospective |
 | `resources/` | Further study | Official documentation and courses |
+| `advanced/` | Advanced engineering | Architecture, detection, DevSecOps, cloud and incident command |
+| `capstones/` | Integrated practice | Multi-domain capstone briefs |
+| `assessments/` | Evaluation | Rubrics and scenario-based assessment |
+| `datasets/` | Practical evidence | Synthetic training datasets and manifest |
+| `curriculum/` | Machine-readable curriculum | Versioned module manifest and schema |
+| `instructor-guide/` | Delivery support | Cohort plans, lesson templates and review guidance |
 
 ## Design principles
 
