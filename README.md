@@ -45,6 +45,27 @@ flowchart TD
     I --> J["10 · Projects and career portfolio"]
 ```
 
+## The complete learning ecosystem
+
+The repository now includes more than a reading roadmap. Use the modules below to study, practise, self-assess and build a portfolio.
+
+| Module | What it adds |
+|---|---|
+| [Architecture](architecture/README.md) | Content model, learner flow, standards and safety boundaries |
+| [Role-based learning paths](learning-paths/README.md) | Eight focused tracks from SOC to GRC and threat intelligence |
+| [Quiz bank](quizzes/README.md) | Versioned JSON quizzes with explanations and a schema |
+| [Practical lab catalog](labs/catalog.md) | Reusable lab briefs, evidence requirements and safe scope |
+| [Offline CTF challenges](ctf-challenges/README.md) | Self-contained puzzles with hints and explanations |
+| [Career pathways](career-paths/README.md) | Role-to-skill map and portfolio guidance |
+| [Cheat sheets](cheat-sheets/README.md) | Networking, Linux, Python and web-security quick references |
+| [Glossary](glossary/README.md) | Searchable cybersecurity terminology |
+| [Weekly planner](weekly-planner/README.md) | Study plan and weekly retrospective |
+| [Achievements](achievements/README.md) | Criteria-based learning milestones |
+| [Student progress templates](student-progress/README.md) | Learner-owned local progress files |
+| [Community guidelines](community/README.md) | Safe collaboration and question-writing guidance |
+
+**Repository-only limitation:** these files provide the curriculum and reusable data. They do not create student logins, shared live progress, automatic quiz grading, online CTF scoring or verified certificates. Personal progress templates should remain in a learner's private local copy.
+
 ## Start here
 
 | Path | What you'll get |
@@ -105,6 +126,17 @@ cybersecurity-roadmap/
 ├── labs/                   # Home-lab setup and practice platforms
 ├── tools/                  # Security tool guide
 ├── resources/              # Courses, documentation, books and certifications
+├── architecture/           # Content model, workflows and safety principles
+├── learning-paths/         # Role-based learning sequences
+├── quizzes/                # Versioned JSON question banks
+├── ctf-challenges/         # Safe offline puzzles
+├── career-paths/           # Role maps and readiness guides
+├── cheat-sheets/           # Quick technical references
+├── glossary/               # Cybersecurity terminology
+├── weekly-planner/         # Study planning templates
+├── achievements/           # Manual learning milestones
+├── student-progress/       # Private learner-owned templates
+├── community/              # Community learning guidelines
 ├── templates/              # Learning journal and report templates
 ├── scripts/                # Repository quality checks
 ├── .github/                # Workflows and contribution templates
