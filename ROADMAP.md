@@ -98,3 +98,12 @@ flowchart TD
 Read vendor documentation and primary standards. Reproduce findings only in controlled environments. Build a sanitized portfolio, practise technical writing and interviews, and review legal and ethical obligations in your jurisdiction.
 
 **Completion standard:** Demonstrate repeatable skills through projects, reports and practical explanations. A completed checklist alone is not proof of professional competence.
+
+
+## Stage 10 — Advanced security engineering
+
+For learners who have met the earlier exit criteria, continue with the [advanced curriculum](advanced/README.md). Deepen capability in security architecture and threat modeling, detection engineering, DevSecOps and supply-chain security, cloud-native security, enterprise identity, threat hunting, vulnerability management and incident command.
+
+**Advanced practice:** complete the [30-day engineering challenge](advanced/30-day-challenge.md), use the synthetic [training datasets](datasets/README.md), and submit one integrated [capstone](capstones/README.md) against the [assessment rubrics](assessments/README.md).
+
+**Exit criteria:** produce a reviewed technical artifact, explain its assumptions and limitations, demonstrate safe and repeatable validation, and defend the chosen risk and control decisions.
