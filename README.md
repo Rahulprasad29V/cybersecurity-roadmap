@@ -4,13 +4,13 @@
 
 <p align="center">
   <strong>Learn. Secure. Build.</strong><br>
-  A practical, open learning path from IT fundamentals to advanced cybersecurity specializations.
+  Open-source cybersecurity education from first principles to advanced security engineering.
 </p>
 
 <p align="center">
   <a href="https://github.com/Rahulprasad29V/cybersecurity-roadmap/stargazers"><img src="https://img.shields.io/github/stars/Rahulprasad29V/cybersecurity-roadmap?style=for-the-badge&logo=github&color=111827" alt="GitHub stars"></a>
   <a href="https://github.com/Rahulprasad29V/cybersecurity-roadmap/network/members"><img src="https://img.shields.io/github/forks/Rahulprasad29V/cybersecurity-roadmap?style=for-the-badge&color=0b6e69" alt="GitHub forks"></a>
-  <a href="https://github.com/Rahulprasad29V/cybersecurity-roadmap/blob/main/LICENSE"><img src="https://img.shields.io/github/license/Rahulprasad29V/cybersecurity-roadmap?style=for-the-badge&color=246b8f" alt="License"></a>
+  <a href="https://img.shields.io/github/license/Rahulprasad29V/cybersecurity-roadmap"><img src="https://img.shields.io/github/license/Rahulprasad29V/cybersecurity-roadmap?style=for-the-badge&color=246b8f" alt="License"></a>
   <a href="https://github.com/Rahulprasad29V/cybersecurity-roadmap/actions/workflows/quality.yml"><img src="https://img.shields.io/github/actions/workflow/status/Rahulprasad29V/cybersecurity-roadmap/quality.yml?branch=main&style=for-the-badge&label=quality%20checks" alt="Quality checks"></a>
   <a href="https://github.com/Rahulprasad29V/cybersecurity-roadmap/commits/main"><img src="https://img.shields.io/github/last-commit/Rahulprasad29V/cybersecurity-roadmap?style=for-the-badge&color=475569" alt="Last commit"></a>
 </p>
@@ -19,150 +19,130 @@
 
 ## The mission
 
-Cybersecurity is a discipline, not a collection of tools. This roadmap helps learners understand how systems work, how to protect them, how to assess them responsibly, and how to prove their skills through practical work.
+Cybersecurity is a discipline, not a collection of tools. CyberWolf helps learners understand systems, design safer architectures, investigate evidence, assess risk and demonstrate skills through reproducible practical work.
 
-**Designed for:** complete beginners · students · aspiring ethical hackers · SOC analysts · developers · security engineers · career switchers.
+**Built for:** beginners · students · ethical security practitioners · SOC analysts · software developers · security engineers · cloud teams · GRC professionals · instructors.
 
-## Explore the roadmap
+## Explore the learning journey
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Rahulprasad29V/cybersecurity-roadmap/main/assets/roadmap-overview.svg" alt="CyberWolf ten-stage cybersecurity learning roadmap" width="100%">
+  <img src="https://raw.githubusercontent.com/Rahulprasad29V/cybersecurity-roadmap/main/assets/roadmap-overview.svg" alt="CyberWolf ten-stage cybersecurity roadmap" width="100%">
 </p>
-
-### The learning flow
 
 ```mermaid
 flowchart TD
-    A["01 · Orientation & lab safety"] --> B["02 · IT and networking"]
-    B --> C["03 · Operating systems and scripting"]
-    C --> D["04 · Security fundamentals"]
-    D --> E["05 · Defensive security"]
-    D --> F["06 · Authorized security testing"]
-    E --> G["07 · Web and application security"]
-    F --> G
-    G --> H["08 · Cloud and identity"]
-    H --> I["09 · Choose a specialization"]
-    I --> J["10 · Projects and career portfolio"]
+    A["Foundations"] --> B["Systems and networking"]
+    B --> C["Scripting and security fundamentals"]
+    C --> D["Defensive security"]
+    C --> E["Authorized security assessment"]
+    D --> F["Application and cloud security"]
+    E --> F
+    F --> G["Advanced engineering modules"]
+    G --> H["Capstones and portfolio"]
+    H --> I["Career readiness"]
 ```
 
-## The complete learning ecosystem
+## Choose your starting point
 
-The repository now includes more than a reading roadmap. Use the modules below to study, practise, self-assess and build a portfolio.
-
-| Module | What it adds |
+| Module | What you get |
 |---|---|
-| [Architecture](architecture/README.md) | Content model, learner flow, standards and safety boundaries |
-| [Role-based learning paths](learning-paths/README.md) | Eight focused tracks from SOC to GRC and threat intelligence |
-| [Quiz bank](quizzes/README.md) | Versioned JSON quizzes with explanations and a schema |
-| [Practical lab catalog](labs/catalog.md) | Reusable lab briefs, evidence requirements and safe scope |
-| [Offline CTF challenges](ctf-challenges/README.md) | Self-contained puzzles with hints and explanations |
-| [Career pathways](career-paths/README.md) | Role-to-skill map and portfolio guidance |
-| [Cheat sheets](cheat-sheets/README.md) | Networking, Linux, Python and web-security quick references |
-| [Glossary](glossary/README.md) | Searchable cybersecurity terminology |
-| [Weekly planner](weekly-planner/README.md) | Study plan and weekly retrospective |
-| [Achievements](achievements/README.md) | Criteria-based learning milestones |
-| [Student progress templates](student-progress/README.md) | Learner-owned local progress files |
-| [Community guidelines](community/README.md) | Safe collaboration and question-writing guidance |
+| [**Main roadmap**](ROADMAP.md) | Beginner-to-advanced stages and exit criteria |
+| [**100-day challenge**](100-days/README.md) | Daily learning activities and progress tracker |
+| [**Topic library**](topics/README.md) | 15 foundational and intermediate subject guides |
+| [**Role-based paths**](learning-paths/README.md) | Eight professional learning pathways |
+| [**Advanced curriculum**](advanced/README.md) | Security architecture, detection, DevSecOps, cloud-native security, identity, threat hunting and incident command |
+| [**Advanced 30-day challenge**](advanced/30-day-challenge.md) | Applied engineering sprint with weekly milestones |
+| [**Capstones**](capstones/README.md) | Five integrated, multi-domain projects |
+| [**Labs**](labs/catalog.md) | Guided exercises with scope, evidence and cleanup |
+| [**CTF-style challenges**](ctf-challenges/README.md) | Self-contained offline puzzles and explanations |
+| [**Quiz bank**](quizzes/README.md) | Beginner through advanced scenario-based JSON question banks |
+| [**Assessment framework**](assessments/README.md) | Rubrics for labs, reports, architecture and capstones |
+| [**Synthetic datasets**](datasets/README.md) | Fictional logs, asset records, cloud findings and risk backlogs |
+| [**Career pathways**](career-paths/README.md) | Role-to-skill map and portfolio guidance |
+| [**Cheat sheets**](cheat-sheets/README.md) | Networking, Linux, Python and web security references |
+| [**Glossary**](glossary/README.md) | Cybersecurity terminology in CSV format |
+| [**Curriculum catalog**](curriculum/README.md) | Versioned machine-readable module manifest |
+| [**Instructor guide**](instructor-guide/README.md) | Cohort plans, lesson plans and assessment delivery |
+| [**Student progress templates**](student-progress/README.md) | Local learner-owned progress records |
+| [**Templates**](templates/learning-journal.md) | Threat models, detection specs, ADRs and report templates |
 
-**Repository-only limitation:** these files provide the curriculum and reusable data. They do not create student logins, shared live progress, automatic quiz grading, online CTF scoring or verified certificates. Personal progress templates should remain in a learner's private local copy.
+## Advanced engineering
 
-## Start here
+The advanced tier is designed for learners who already understand networking, operating systems, scripting and security fundamentals.
 
-| Path | What you'll get |
-|---|---|
-| [**Complete roadmap**](ROADMAP.md) | Competency-based stages, practice goals and exit criteria |
-| [**100-day challenge**](100-days/README.md) | One guided activity per day, with [progress tracker](100-days/progress-tracker.md) |
-| [**Topic library**](topics/README.md) | 15 focused guides from fundamentals to specialist domains |
-| [**Project studio**](projects/README.md) | Portfolio projects grouped by difficulty |
-| [**Lab setup**](labs/README.md) | Safe home-lab guidance and reputable practice platforms |
-| [**Toolbox**](tools/README.md) | What common security tools do—and their limitations |
-| [**Resource library**](resources/README.md) | Official docs, standards, learning platforms and certifications |
-| [**Templates**](templates/learning-journal.md) | Learning journal, lab report and vulnerability report |
+- **Architecture:** trust boundaries, threat modeling, abuse cases and residual-risk decisions.
+- **Detection engineering:** hypotheses, telemetry quality, analytic testing, tuning and triage.
+- **DevSecOps:** secure delivery pipelines, dependency risk, secrets, provenance and release assurance.
+- **Cloud-native security:** workload identity, Kubernetes boundaries, containers and posture reviews.
+- **Enterprise identity:** federation, privilege lifecycle, service identities and access certification.
+- **Threat hunting:** hypothesis-driven analysis, coverage gaps and defensible conclusions.
+- **Vulnerability management:** asset-aware prioritization, exceptions and retesting.
+- **Incident command:** decision logs, communications, containment trade-offs and recovery.
 
-## Choose a direction
+Use the [synthetic training datasets](datasets/README.md) and [capstone acceptance criteria](capstones/README.md) to produce evidence that can be reviewed.
 
-| Track | Focus areas | Build evidence with |
-|---|---|---|
-| **SOC / Blue Team** | Logs, SIEM, endpoint telemetry, detection and response | Alert triage, detection logic, incident report |
-| **Penetration Testing** | Scope, discovery, validation and reporting | Authorized lab assessment |
-| **Application Security** | Secure coding, threat modeling, OWASP and testing | Fixed demo application and regression tests |
-| **Cloud Security** | IAM, cloud posture, workloads and data protection | Cloud security review |
-| **DFIR** | Evidence handling, timelines and investigations | Forensic case notes |
-| **Malware Analysis** | Safe static analysis and behavioral detection | Benign sample analysis report |
-| **GRC** | Risk, policies, controls, audit and privacy | Risk register and control mapping |
-| **Security Engineering** | Architecture, automation, hardening and monitoring | Secure reference architecture |
+## Practical proof, not tool collecting
 
-You do not need to choose a specialization on Day 1. Build the foundations first, then follow the track that matches your interests.
+Every substantial exercise should produce:
+1. A clear objective, authorized scope and assumptions.
+2. A repeatable method and evidence log.
+3. Findings supported by evidence—not unsupported claims.
+4. Risk reasoning, remediation and validation.
+5. Limitations, privacy checks and cleanup records.
 
-## The 100-day challenge
-
-A structured sequence of daily activities covering networking, Linux, Windows, programming, security principles, blue-team practice, authorized assessment, web security, cloud, forensics and portfolio development.
-
-- Start with [Day 001](100-days/DAY-001.md).
-- Browse the [complete day index](100-days/README.md).
-- Track your progress in [progress-tracker.md](100-days/progress-tracker.md).
-
-**Suggested pace:** 45–90 minutes per day. This is a learning guide, not a race. Repeat topics until you can explain and demonstrate them.
-
-## Build, don't just read
-
-The project path moves from small scripts and security checklists to packet investigations, web application reviews, detection engineering, cloud posture reviews and secure architecture.
-
-Every portfolio project should explain:
-1. The problem and authorized scope.
-2. The environment, assumptions and methodology.
-3. Evidence and test results.
-4. Findings, defensive lessons or remediation.
-5. Limitations and what remains untested.
-
-## Repository structure
+## Repository architecture
 
 ```text
 cybersecurity-roadmap/
-├── assets/                 # CyberWolf banner and roadmap visuals
-├── topics/                 # 15 cybersecurity study guides
-├── 100-days/               # Daily challenge, 100 day files and tracker
-├── projects/               # Beginner, intermediate and advanced projects
-├── labs/                   # Home-lab setup and practice platforms
-├── tools/                  # Security tool guide
-├── resources/              # Courses, documentation, books and certifications
-├── architecture/           # Content model, workflows and safety principles
-├── learning-paths/         # Role-based learning sequences
-├── quizzes/                # Versioned JSON question banks
-├── ctf-challenges/         # Safe offline puzzles
-├── career-paths/           # Role maps and readiness guides
-├── cheat-sheets/           # Quick technical references
-├── glossary/               # Cybersecurity terminology
-├── weekly-planner/         # Study planning templates
-├── achievements/           # Manual learning milestones
-├── student-progress/       # Private learner-owned templates
-├── community/              # Community learning guidelines
-├── templates/              # Learning journal and report templates
-├── scripts/                # Repository quality checks
-├── .github/                # Workflows and contribution templates
-├── README.md
-├── ROADMAP.md
-├── CONTRIBUTING.md
-├── SECURITY.md
-├── CODE_OF_CONDUCT.md
-└── LICENSE
+├── architecture/       # Learning system design, standards and safety
+├── advanced/           # Advanced security engineering curriculum
+├── learning-paths/     # Role-based learning sequences
+├── curriculum/         # Versioned JSON manifest and schema
+├── topics/             # Core study guides
+├── 100-days/           # 100 daily challenge files
+├── quizzes/            # JSON question banks and schema
+├── labs/               # Lab catalog, exercises and templates
+├── ctf-challenges/     # Safe offline puzzles
+├── capstones/          # Integrated final projects
+├── assessments/        # Rubrics and assessment framework
+├── datasets/           # Synthetic datasets and manifest
+├── career-paths/       # Career skill maps
+├── cheat-sheets/       # Technical quick references
+├── glossary/           # Searchable terminology
+├── student-progress/   # Private local progress templates
+├── achievements/       # Manual learning milestones
+├── weekly-planner/     # Study plans and retrospectives
+├── instructor-guide/   # Cohort and lesson delivery
+├── projects/           # Portfolio project briefs
+├── resources/          # Official docs, courses and references
+├── templates/          # Reusable engineering and reporting templates
+├── scripts/            # Repository validation tools
+└── .github/workflows/  # Automated quality gates
 ```
 
-## Learn responsibly
+## Content quality and maintenance
+
+GitHub Actions validates local Markdown links, the 100-day sequence, structured quiz data, achievements, curriculum modules and synthetic dataset manifests. See [curriculum release process](curriculum/RELEASE_PROCESS.md) for review and versioning guidance.
+
+## Safety and legal boundaries
 
 > [!IMPORTANT]
-> **Authorization is mandatory.** Only test systems you own or have explicit written permission to assess. Stay within the defined scope and follow the platform's rules.
+> **Authorization is mandatory.** Only assess systems you own or have explicit written permission to test. Stay within the exact scope, rules and time window.
 
-Use local virtual machines, synthetic data, CTFs and intentionally vulnerable training applications. Never scan, exploit, disrupt or access third-party systems without authorization. Do not publish credentials, tokens, private keys, personal data or sensitive evidence.
+Use local virtual machines, synthetic data, CTFs and intentionally vulnerable training applications. This repository does not authorize testing third-party systems. Do not contribute credential theft, malware deployment, evasion, persistence, destructive actions, denial-of-service or data-exfiltration instructions.
 
-## Contribute to CyberWolf
+Never publish credentials, tokens, private keys, real incident records, personal data or confidential architecture.
 
-Corrections, safe lab exercises, clearer explanations and maintained learning resources are welcome.
+## Repository-only capability boundary
 
-- Read [Contributing Guidelines](CONTRIBUTING.md).
+This is a content-first open-source repository. It provides learning material and reusable data formats. It does not provide student accounts, a central database, live synchronized progress, automatic online grading, CTF scoring, proctored assessments or verified certificate issuance. Learners keep personal progress in private local copies. A separate application and backend would be required for those live services.
+
+## Contribute
+
+- Read [CONTRIBUTING.md](CONTRIBUTING.md).
 - Follow the [Code of Conduct](CODE_OF_CONDUCT.md).
 - Review the [Security Policy](SECURITY.md).
-- Open an issue for content improvements or submit a pull request.
+- Use the [content standards](architecture/content-standards.md) and [release process](curriculum/RELEASE_PROCESS.md).
 
 ---
 
