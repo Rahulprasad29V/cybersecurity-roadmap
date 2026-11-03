@@ -20,4 +20,8 @@ Study these guides alongside the [main roadmap](../ROADMAP.md). Each topic shoul
 | [Identity and access management](14-identity-and-access-management.md) | MFA, SSO, RBAC, privileged and service accounts |
 | [GRC](15-governance-risk-and-compliance.md) | Risk, policies, controls, audits and frameworks |
 
+## Advanced topics
+
+Once the core guides are complete, continue with the [advanced security curriculum](../advanced/README.md), including architecture, detection engineering, DevSecOps, cloud-native security, enterprise identity, threat hunting, vulnerability management and incident command.
+
 Only practise on systems you own or have explicit written authorization to assess.
