@@ -1,0 +1,84 @@
+{
+  "format_version": 1,
+  "title": "CyberWolf Web Security Check",
+  "level": "intermediate",
+  "category": "Web Application Security",
+  "description": "Questions about browser/server boundaries, access control and secure application design.",
+  "questions": [
+    {
+      "id": "web-client-validation",
+      "topic": "Input Validation",
+      "difficulty": "beginner",
+      "prompt": "Why is client-side validation not sufficient as the only security control?",
+      "options": [
+        { "id": "A", "text": "Browsers cannot display validation errors" },
+        { "id": "B", "text": "A user can bypass or modify client-side checks" },
+        { "id": "C", "text": "Server-side code cannot validate input" },
+        { "id": "D", "text": "Validation always encrypts data" }
+      ],
+      "correct_option": "B",
+      "explanation": "Client-side checks improve usability, but a client is not trusted. The server must validate data and enforce business rules.",
+      "reference": "https://owasp.org/www-project-application-security-verification-standard/"
+    },
+    {
+      "id": "web-access-control",
+      "topic": "Access Control",
+      "difficulty": "intermediate",
+      "prompt": "Where should an application enforce authorization for a sensitive record?",
+      "options": [
+        { "id": "A", "text": "Only by hiding the menu item in the browser" },
+        { "id": "B", "text": "Only in client-side JavaScript" },
+        { "id": "C", "text": "On the server for each protected action or object" },
+        { "id": "D", "text": "Only during account registration" }
+      ],
+      "correct_option": "C",
+      "explanation": "Server-side authorization must validate that the authenticated identity has permission for the specific action and object. UI restrictions are not security boundaries.",
+      "reference": "https://owasp.org/Top10/A01_2021-Broken_Access_Control/"
+    },
+    {
+      "id": "web-sql-parameterization",
+      "topic": "Injection Prevention",
+      "difficulty": "beginner",
+      "prompt": "Which practice most directly helps prevent SQL injection in database queries?",
+      "options": [
+        { "id": "A", "text": "Concatenate user input into SQL strings" },
+        { "id": "B", "text": "Use parameterized queries" },
+        { "id": "C", "text": "Hide database errors only in the browser" },
+        { "id": "D", "text": "Rename the database tables" }
+      ],
+      "correct_option": "B",
+      "explanation": "Parameterized queries keep data separate from SQL command structure, reducing the risk that untrusted input is interpreted as executable query syntax.",
+      "reference": "https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html"
+    },
+    {
+      "id": "web-xss-output-encoding",
+      "topic": "Cross-Site Scripting",
+      "difficulty": "intermediate",
+      "prompt": "What is the purpose of context-aware output encoding?",
+      "options": [
+        { "id": "A", "text": "To make every browser request anonymous" },
+        { "id": "B", "text": "To ensure untrusted data is treated as data in the output context" },
+        { "id": "C", "text": "To disable all JavaScript on the internet" },
+        { "id": "D", "text": "To replace server-side authorization" }
+      ],
+      "correct_option": "B",
+      "explanation": "Correct encoding for the HTML, attribute, URL or JavaScript context helps prevent untrusted data from being interpreted as executable markup or code.",
+      "reference": "https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html"
+    },
+    {
+      "id": "web-session-cookie",
+      "topic": "Session Security",
+      "difficulty": "intermediate",
+      "prompt": "Which cookie attribute helps prevent JavaScript from reading a session cookie?",
+      "options": [
+        { "id": "A", "text": "HttpOnly" },
+        { "id": "B", "text": "Max-Age only" },
+        { "id": "C", "text": "Domain only" },
+        { "id": "D", "text": "Comment" }
+      ],
+      "correct_option": "A",
+      "explanation": "HttpOnly instructs browsers to restrict access to the cookie through non-HTTP APIs such as document.cookie. It does not replace other session protections.",
+      "reference": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie"
+    }
+  ]
+}
