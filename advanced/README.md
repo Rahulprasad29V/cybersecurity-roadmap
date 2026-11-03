@@ -22,6 +22,18 @@ This curriculum is for learners who already understand networking, operating sys
 | [Vulnerability management](vulnerability-management.md) | Exposure, prioritization, remediation and validation | Risk-based remediation plan |
 | [Incident command and resilience](incident-command.md) | Decision-making, communications and recovery | Incident command tabletop |
 
+## Advanced challenge and capstones
+
+- [Advanced 30-day engineering challenge](30-day-challenge.md)
+- [Advanced assessment blueprint](advanced-assessment-blueprint.md)
+- [Architecture review capstone](../capstones/architecture-review.md)
+- [Detection engineering capstone](../capstones/detection-program.md)
+- [Secure SDLC capstone](../capstones/secure-sdlc.md)
+- [Cloud posture capstone](../capstones/cloud-posture.md)
+- [Incident response capstone](../capstones/incident-response.md)
+
+Use the [synthetic dataset catalog](../datasets/README.md) and reusable [engineering templates](../templates/threat-model.md).
+
 ## Advanced learning method
 For each module:
 1. Read the learning outcomes and primary references.
