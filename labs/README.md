@@ -27,3 +27,14 @@ Availability, pricing, features and rules can change. Confirm details on the off
 
 ## Suggested home lab
 Use a supported hypervisor, one general-purpose Linux VM, an optional Windows evaluation/lab VM where licensing permits, an isolated virtual network, an intentionally vulnerable local training app, and snapshots. Do not bridge vulnerable targets onto a network you do not control. Keep lab-only passwords unique and never reuse work or personal credentials.
+
+
+## Guided exercises
+The detailed [lab catalog](catalog.md) links to guided exercises for:
+- [Packet review](exercises/packet-review.md)
+- [Synthetic log triage](exercises/log-triage.md)
+- [File integrity verification](exercises/file-integrity.md)
+- [Local web security review](exercises/web-security-review.md)
+- [Cloud configuration review](exercises/cloud-review.md)
+
+Use the reusable [lab exercise template](lab-exercise-template.md) when proposing a new activity.
