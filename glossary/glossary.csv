@@ -1,0 +1,14 @@
+term,definition,category,reference
+Access control,Rules that determine which subjects can perform which actions on which resources,Identity and Access Management,https://owasp.org/Top10/A01_2021-Broken_Access_Control/
+Authentication,Process of verifying the claimed identity of a user or system,Identity and Access Management,https://csrc.nist.gov/glossary/term/authentication
+Authorization,Decision about whether an authenticated subject may perform a requested action,Identity and Access Management,https://csrc.nist.gov/glossary/term/authorization
+CIA triad,Confidentiality integrity and availability as core information security objectives,Security Fundamentals,https://csrc.nist.gov/glossary
+Cryptographic hash,Function that maps input data to a fixed-length digest, Cryptography,https://csrc.nist.gov/projects/hash-functions
+CVE,Common Vulnerabilities and Exposures identifier program for publicly disclosed vulnerabilities,Vulnerability Management,https://www.cve.org/
+Defense in depth,Use of multiple complementary security controls,Security Architecture,https://csrc.nist.gov/glossary
+DNS,Distributed naming system that maps domain names to resource records,Networking,https://www.rfc-editor.org/rfc/rfc1034
+Least privilege,Granting only the access necessary for an assigned task,Identity and Access Management,https://csrc.nist.gov/glossary/term/least_privilege
+MFA,Authentication using two or more distinct factors,Identity and Access Management,https://csrc.nist.gov/glossary/term/multi-factor_authentication
+SIEM,Technology and processes for collecting and analyzing security-relevant event data,Defensive Security,https://www.cisa.gov/
+Threat model,Structured representation of assets trust boundaries threats and mitigations,Application Security,https://owasp.org/www-community/Threat_Modeling
+Vulnerability,Weakness that could be exploited or triggered and result in a security impact,Security Fundamentals,https://csrc.nist.gov/glossary
